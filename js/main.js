@@ -18,7 +18,15 @@ function init(e) {
     e.preventDefault();
     var input = document.getElementById("your-val").value;
     var number = Number(input);
-    calculate(input);
+    validation(number)
+}
+
+function validation(elem) {
+    if (elem > 0) {
+        calculate(elem);
+    } else {
+        showResult.textContent = "Value must be higher than 0."
+    }
 }
 
 function calculate(givenValue) {
