@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+}
+
+.form-inline {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin: 0 auto;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+.sel-curr {
+    width: 80px;
+}
+
+.currency {
+    margin-right: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+    .sel-curr {
+        width: 100%;
+    }
+    .currency {
+        margin-right: 0;
+    }
+}
+
+.label-font {
+    font-size: 15px;
+}
+
+.value-input {
+    margin-top: 25px;
+    width: 216px;
+}
+
+.result-btn {
+    margin-top: 25px;
+}
+
+.value-input input::-webkit-outer-spin-button,
+.value-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {}

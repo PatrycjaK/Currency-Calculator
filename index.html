@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Currency Calculator</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Currency Calculator</h1>
+                <form action="" class="form-inline">
+                    <div class="form-group currency">
+                        <label for="sel-opt" class="label-font">From:</label>
+                        <select class="form-control sel-curr" id="sel-opt" required>
+                            <option>PLN</option>
+                            <option>USD</option>
+                            <option>EUR</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel-opt2" class="label-font">To:</label>
+                        <select class="form-control sel-curr" id="sel-opt2" required>
+                            <option>USD</option>
+                            <option>PLN</option>
+                            <option>EUR</option>
+                        </select>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div class="form-group value-input">
+                        <!-- <label for="your-val">Value:</label> -->
+                        <input type="number" class="form-control" id="your-val" placeholder="Your value">
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <button type="submit" class="result-btn" id="button">Show results</button>
+                </form>
+                <div class="calculated">
+                    <br/>
+                    <span class="result"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    </script>
+</body>
+
+</html>
